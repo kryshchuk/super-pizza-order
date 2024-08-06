@@ -184,7 +184,6 @@ export class OrderComponent implements OnInit {
     
     const isOfferApproved = (doublePointsToppings.length === 2 && selectedToppings.length === 2) ||
     (doublePointsToppings.length === 1 && selectedToppings.length === 3) || (selectedToppings.length === 4 && doublePointsToppings.length === 0);
-    console.log({doublePointsToppings,isOfferApproved, selectedToppings, val});
 
     return isOfferApproved ? sum * this.offers.offerThree : val;
   }
